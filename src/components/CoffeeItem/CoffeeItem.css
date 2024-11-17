@@ -1,0 +1,89 @@
+[data-component="coffee-items"] {
+  display: block;
+  position: relative;
+
+  @media (min-width: 641px) {
+    width: 45%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 30%;
+  }
+
+  &.hide-coffee {
+    display: none;
+  }
+
+  .image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .popular-tag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: var(--orange-yellow);
+    padding: 4px 14px;
+    border-radius: 40px;
+    color: var(--chinese-black);
+    font-weight: 700;
+  }
+
+  .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .rating-star {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+  }
+
+  .name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .price {
+    padding: 2px 6px;
+    background-color: var(--jet-stream);
+    border-radius: 4px;
+    color: var(--chinese-black);
+    font-weight: 700;
+  }
+
+  .sold-out {
+    color: var(--terra-cotta);
+  }
+
+  .votes-count {
+    color: var(--sonic-silver);
+    margin-left: 4px;
+  }
+}

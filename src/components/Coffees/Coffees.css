@@ -1,0 +1,55 @@
+[data-component="Coffees"] {
+  .list-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: 641px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 10%;
+      /* padding: 0 90px; */
+    }
+
+    @media (min-width: 1280px) {
+      column-gap: 5%;
+    }
+  }
+
+  .filters {
+    position: relative;
+    display: inline-flex;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
+    font-weight: 700;
+    margin: 30px 0;
+
+    li {
+      cursor: pointer;
+      list-style-type: none;
+      padding: 10px 0;
+      z-index: 2;
+    }
+
+    span {
+      padding: 10px;
+    }
+  }
+
+  .filters::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateX(var(--transformJS));
+    width: var(--widthJS);
+    height: 100%;
+    border-radius: 10px;
+    background: var(--sonic-silver);
+    transition: all 0.3s linear;
+  }
+}
