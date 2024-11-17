@@ -6,11 +6,11 @@
   "homepage": "https://fabian-guerrero.github.io/devchallenges-simpleCoffeeListing",
   "scripts": {
     "predeploy": "npm run build",
-    "predeploy:github": "npm run build:github",
+    "predeploy:local": "npm run build:local",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
-    "build:github": "vite build --base=/devchallenges-simpleCoffeeListing/.",
+    "build": "vite build --base=/devchallenges-simpleCoffeeListing/.",
+    "build:local": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
